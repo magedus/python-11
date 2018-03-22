@@ -1,0 +1,358 @@
+(You should start with the ".Rmd" file that produced what you're
+reading: [hw2.Rmd](hw2.Rmd). But this HTML version is easier to read.)
+
+# STAT 327 Homework 2
+
+We will grade your homework by
+
+* opening your ".Rmd" file in RStudio in a directory (folder) containing the data file(s)
+* clicking "Knit HTML"
+* reading the HTML output
+* reading your ".Rmd" file
+* running source("hw2grocery.R") to test your Part 4 (below)
+
+You should write R code in the existing R code chunks.
+
+Include reasonable titles and labels with each of your graphs.
+
+### Name: Elaine Huang
+
+### Email: xhuang266@wisc.edu
+
+```{r}
+rm(list = ls()) # remove all variables
+layout(1)       # set graphical device to default state
+par(pty="m")    # set graphical device to default state
+```
+
+## Part 1: Write the floor.log2() function described in the comments above its function stub, below.
+
+```
+# Description: floor.log2(n) computes the largest integer exponent, e,
+# such that 2^e <= n. That is, it computes floor(log(n, base=2)).
+#
+# Usage: floor.log2(n)
+# Parameter: n, a number (must be >= 1)
+# Value: floor(log(n, base=2)
+# Examples:
+#   floor.log2(1) is 0
+#   floor.log2(2) is 1
+#   floor.log2(3) is 1
+#   floor.log2(4) is 2
+#   floor.log2(5) is 2
+#   floor.log2(6) is 2
+#   floor.log2(7) is 2
+#   floor.log2(8) is 3
+# (Use a loop to accumulate a product. You may not use "^" or log(),
+# etc. Use stopifnot() to check the argument according to the "must"
+# statement above.)
+```
+stopifnot(floor.log2(5) == 2)
+stopifnot(floor.log2(8) == 3)
+stopifnot(floor.log2(13) == 3)
+stopifnot(floor.log2(16) == 4)
+
+```{r}
+floor.log2 = function(n) {
+  count = 0
+  while (n %/% 2 >= 1) {
+    count = count + 1
+    n = n %/% 2;
+  }
+return(count)
+}
+stopifnot(floor.log2(5) == 2)
+stopifnot(floor.log2(8) == 3)
+stopifnot(floor.log2(13) == 3)
+stopifnot(floor.log2(16) == 4)
+```
+
+Add code to confirm that floor.log2(n) matches floor(log(n, base=2))
+on integer inputs from 1 to 1000.
+
+```{r}
+for (i in 1:1000)
+  stopifnot(isTRUE(all.equal(floor.log2(i), floor(log2(i)))))
+```
+
+## Part 2: Run a Monte Carlo simulation to estimate pi.
+
+Here we estimate pi by the method discussed at
+[https://en.wikipedia.org/wiki/Monte_Carlo_integration](https://en.wikipedia.org/wiki/Monte_Carlo_integration). All
+you need to read there is the first paragraph and the first figure and
+its caption. We will do this with the help of two functions:
+
+  * magnitude(x, y), a helper function to be called by monte.carlo.pi(), below, that returns the distance of the point (x, y) to the origin
+  * monte.carlo.pi(n , draw=FALSE), which estimates pi from n random points and optionally draws a picture of the simulation
+
+```
+# Description: magnitude returns the distance a of point (x, y) from
+#   the origin (or a vector of such distances if x and y are vectors).
+# Usage: magnitude(x, y)
+# Arguments:
+#   x: x-coordinate of one point (or x-coordinates of several points)
+#   y: y-coordinate of one point (or y-coordinates of several points)
+#      (must have same length as x)
+# Value: distance(s) of (x, y) from the origin.
+# Hint: don't forget to check that x and y have the same length.
+```
+
+```{r}
+magnitude = function(x, y) {
+  stopifnot(isTRUE(all.equal(length(x),length(y))))
+  distance = sqrt(x^2 + y^2)
+  return(distance)
+}
+```
+
+Here are some test cases. Correct your magnitude() code if it fails any of these tests.
+```{r}
+# First are several tests, each passing just one (x, y) point.
+stopifnot(isTRUE(all.equal(magnitude(3,  4), 5)))
+stopifnot(isTRUE(all.equal(magnitude(3, -4), 5)))
+stopifnot(isTRUE(all.equal(magnitude(0, 0), 0)))
+stopifnot(isTRUE(all.equal(magnitude(-1, 1), sqrt(2))))
+# Second is a test passing vectors of points (x, y). (Note that R's
+# arithmetic operators act on vectors, so a loop in magnitude() is not
+# necessary to handle this test case.)
+test.x   = c(3,  3, 0,      -1,  5)
+test.y   = c(4, -4, 0,       1, 12)
+test.mag = c(5,  5, 0, sqrt(2), 13)
+stopifnot(isTRUE(all.equal(magnitude(test.x, test.y), test.mag)))
+```
+
+```
+# Description: monte.carlo.pi estimates pi by simulation.
+# Usage: monte.carlo.pi(n, draw=FALSE)
+# Arguments:
+#   n: number of random points to use
+#   draw: logical, whether or not to draw a graph of the simulation
+#     consisting of the n points and the unit circle.
+# Details: The simulation proceeds by getting n random points {(x, y)}
+#   in the square defined by -1 < x < 1 and -1 < y < 1, and then
+#   counting how many of those points are within a radius 1 of (0, 0).
+#   We can use
+#     (area of circle)/(area of square) = pi*r^2  / (2r)^2
+#                                       = pi(1^2) / (2*1)^2, since r=1
+#                                       = pi/4
+#   so
+#     pi = 4*(area of circle)/(area of square)
+#        =~ 4*(#points in circle) / (#points in square)
+# Value: an estimate of pi.
+# Hints:
+#   - ?runif tells how to get random coordinates in the range (-1, 1)
+#   - You can see a picture like the required drawing at the top of
+#     http://en.wikipedia.org/wiki/Monte_Carlo_Integration. (Don't
+#     worry if you don't understand the article, which isn't easy.)
+#   - Using R's base graphics, you can plot the points via plot(x, y).
+#   - One way to draw the circle is to get a sequence of angles (in
+#     radians) from 0 to 2*pi, and then use x coordinate cos(angle)
+#     and y coordinate sin(angle).
+```
+
+```{r}
+library("plotrix")
+monte.carlo.pi = function(n, draw=FALSE) {
+  
+  Xpoint = runif(n, min = -1, max = 1)
+  Ypoint = runif(n, min = -1, max = 1)
+  count = 0
+  for ( i in 1:n) {
+    if (magnitude(Xpoint[i], Ypoint[i]) <= 1) {
+      count = count + 1
+    }
+  }
+  pi = count / n * 4
+  
+  
+  if (draw) {
+    plot(Xpoint,Ypoint,asp=1,xlim=c(-1,1),ylim=c(-1,1))
+    draw.circle(0,0,1,nv=1000,border=NULL,col=NA,lty=1,lwd=1)
+    rect(-1,-1,1,1)
+  }
+  
+  
+  return(pi)
+}
+cat(sep="", "monte.carlo.pi(1000)=", monte.carlo.pi(1000), "\n") # get estimate
+monte.carlo.pi(1000, TRUE) # make graph
+
+
+   
+```
+
+Finally, make a graph to show the distribution of pi estimates for
+n=100 and n=1000. Use replicate() to get 500 pi estimates using n=100
+each time. Then use replicate() to get 500 pi estimates using n=1000
+each time. Draw a graph comparing these two distributions.  (You can
+use a reasonable graph of your choice.)
+
+```{r}
+x = replicate(n=500, monte.carlo.pi(100))
+y = replicate(n=500, monte.carlo.pi(1000))
+plot(density(x))
+plot(density(y))
+```
+
+## Part 3: Practice with apply() family of functions.
+
+Three functions are provided in "hw4freeCode.R". Read through that
+file quickly, and then use its functions below. R Markdown will read
+them into the current session here:
+
+```{r}
+source("hw2freeCode.R") # Don't change this line.
+```
+
+The file "scores.csv" contains simulated scores data for a statistics
+course. Some of its column names are abbreviations:
+
+* "Poss" means "Possible" (total points possible)
+* "Pct" means "Percentage"
+* "Pctile" means "Percentile"
+
+Read the file into a data frame.
+
+```{r}
+scores = read.csv("scores.csv", header = TRUE)
+```
+
+Add three columns to the "scores" data frame:
+
+* Pct.gr ("gr" abbreviates "grade"), the letter grade given by the
+PercentageGrade() function on the Pct column. Hint: use sapply()
+* Pctile.gr, the letter grade given by the PercentileGrade() function
+on the Pctile column.
+* Grade, the letter grade given by the CourseGrade() function on your
+first two new columns. Hint: use mapply(). By default, it will
+return a named character (string) vector. You can get rid of the
+names with one of
++ USE.NAMES=FALSE as a mapply() argument
++ names(x) = NULL on the returned vector
++ as.character() on the returned vector
+
+Then display the new data frame.
+
+```{r}
+scores$Pct.gr = sapply(scores$Pct, FUN = PercentageGrade)
+scores$Pctile.gr = sapply(scores$Pctile, FUN = PercentileGrade)
+scores$Grade = mapply(CourseGrade, scores$Pct.gr,scores$Pctile.gr, USE.NAMES = FALSE)
+```
+
+Display the average E1 score, rounded to one place after the decimal
+point, for each group of students with the same course grade. (There
+should be an average E1 score for the A students, an average for the
+AB students, etc.) Hint: use tapply().
+
+```{r}
+ave.score = tapply(X=scores$E1, INDEX = scores$Grade, FUN = mean)
+round(ave.score,1)
+```
+
+Display the average score (across all students) for each quiz
+(column). That is, display four quiz averages. Hint: use apply().
+
+```{r}
+apply(X = scores[,1:4], MARGIN = 2, FUN = mean)
+
+```
+
+Display the average quiz score (across Q1 through Q4) for each student
+(row). That is, display 25 student averages. Hint: use apply().
+
+```{r}
+apply(X = scores[,1:4], MARGIN = 1, FUN = mean)
+```
+
+## Part 4: Manage a grocery list.
+
+Write an R script called "hw2grocery.R" that helps with grocery
+shopping by running through a list of candidate groceries and their
+prices, getting user input on each item, and then making a shopping
+list. Here's a sample session run with a budget of ten dollars:
+
+```
+> source("hw2grocery.R")
+          item price
+1      spinach   2.0
+2         rice   3.0
+3 toilet paper   4.0
+4        bread   2.4
+5         milk   3.1
+6        apple   0.4
+How many spinach?
+1: 2
+How many rice?
+1: 1
+How many bread?
+1: 1
+How many apple?
+1: 2
+  ERROR: too many for the budget
+How many apple?
+1: 1
+     item price quantity
+1 spinach   2.0        2
+2    rice   3.0        1
+3   bread   2.4        1
+4   apple   0.4        1
+Your bill is $9.8
+>
+```
+
+There are three pieces of code to write to solve Part 4.
+
+### Part 4.1: write a how.many() function
+
+First, write a helper function, how.many, that takes two arguments,
+item (character string) and n.max (numeric). Display the prompt, "How
+many item?", and then require the user to enter desired number of
+item, an integer between 0 and n.max. (Assume the user will enter a
+nonnegative integer.) If user enters a number larger than n.max,
+display the message, " ERROR: too many for the budget" and start
+again. Return the user's number. For example, the call
+how.many("apple", 4) prints "How many apple?" and returns a number
+chosen by the user between 0 and 4.
+
+
+### Part 4.2: write a grocery.list() function
+
+Second, write a function, grocery.list, that takes two arguments, file
+(a character string file name) and budget (numeric). From file, read a
+grocery price list containing items and prices, like this:
+
+```
+spinach,2.00
+rice,3.00
+toilet paper,4.00
+bread,2.40
+milk,3.10
+apple,0.40
+```
+
+Display the price list. Loop through it asking how many of each item
+should be purchased. (Use your how.many() function.)
+
+budget is the maximum amount that can be spent. Do not accept a
+user's number of an item if it causes the budget to be exceeded. Do
+not display an item at all if its price is higher than the remaining
+budget.
+
+Return a data frame consisting of three columns, "item", "price", and
+"quantity", and those rows with nonzero quantities.
+
+### Part 4.3: call your grocery.list() function
+
+Third, write a few lines of code to call your grocery.list() on a
+"groceries.csv" file with a budget of $10. Print the returned shopping
+list (data frame) along with the total bill, in a line of the form,
+"Your bill is $n", where n is a number.
+
+### Part 4 grading note
+
+We'll grade this part of your homework by running
+source("hw2grocery.R") in a directory containing a "groceries.csv"
+grocery price list file (which may be different from the one you
+used), giving user input, checking your output, and reading your
+code. To make it possible partly to automate grading, your output
+strings should exactly match the specified output strings.
