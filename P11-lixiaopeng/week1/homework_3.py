@@ -3,7 +3,7 @@ import random
 Num_lst = []
 Upp_lst = []
 Low_lst = []
-Quit_cmd = 'q'
+Quit_cmd = 'quit'
 for i in range(48,58):
     Num_lst.append(i)
 for j in range(65,91):
