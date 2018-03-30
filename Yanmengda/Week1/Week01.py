@@ -37,10 +37,10 @@ import string
 result = []
 source = list(string.ascii_letters+string.digits)
 
-num = 10
+num = 200
 length = 15
 
-for i in range(10):
+for i in range(num):
     result.append(str(i))
     while  len(result) < num:
         tmp = ''
