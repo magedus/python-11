@@ -7,7 +7,7 @@ import random,string
 
 lst = []
 length = 0
-while length < 10 :
+while length < 200 :
     #生成随机数
     number = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
     
