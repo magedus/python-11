@@ -1,10 +1,11 @@
-triangle = [[1],[1,1]]
-n = 10
-for i in range(2,n):
-    pre = triangle[i-1]
-    cur = [1]
-    for j in range(0,i-1):
-        cur.append(pre[j]+pre[j+1])
-    cur.append(1)
-    triangle.append(cur)
-print(triangle)
+print(0)
+print(1)
+a = 0
+b = 1
+while True:
+    c =a + b
+    a = b
+    b =c
+    if c > 100:
+        break
+    print(c)
