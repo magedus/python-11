@@ -1,3 +1,4 @@
+#生成200个优惠券
 import random
 list=[]
 for x in range(65,91):
