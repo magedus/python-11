@@ -1,0 +1,27 @@
+#打印斐波那契数列前100项
+import random
+list=[]
+for x in range(65,91):
+    a=str(chr(x))
+    list.append(a)
+#print(list) 
+for x in range(97,123):
+    a=str(chr(x))
+    list.append(a)
+#print(list) 
+for x in range(10):
+    list.append(str(x))
+#print(list) 
+def gen_code():
+    s=''
+    for x in range(10):
+        a=random.choice(list)
+        s=s+a
+    print(s,end="    ")
+#生成200个激活码,每行10个输出
+count=0
+for x in range(200):
+    gen_code()
+    count+=1
+    if(count%10==0):
+        print()
