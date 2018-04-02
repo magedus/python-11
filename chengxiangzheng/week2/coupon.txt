@@ -1,8 +1,13 @@
-<NotepadPlus>
-    <Session activeView="0">
-        <mainView activeIndex="0">
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="261" startPos="40" endPos="40" selMode="0" lang="Normal Text" encoding="-1" filename="H:\&#x9A6C;&#x54E5;python&#x5B9E;&#x6218;&#x73ED;11&#x671F;\python-11\chengxiangzheng\week2\coupon.txt" backupFilePath="" originalFileLastModifTimestamp="1522636861" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="44929872" mapWrapIndentMode="-1" mapIsWrap="no" />
-        </mainView>
-        <subView activeIndex="0" />
-    </Session>
-</NotepadPlus>
+#随机生成200个优惠券
+import random
+list=['@','#','$','%','*','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+count=0
+for x in range(200):
+    s=''
+    for x in range(10):
+        a=random.choice(list)
+        s=s+a
+    print(s,end="    ")
+    count+=1
+    if(count%10==0):
+        print()
