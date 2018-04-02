@@ -1,27 +1,8 @@
-#生成200个优惠券
-import random
-list=[]
-for x in range(65,91):
-    a=str(chr(x))
-    list.append(a)
-#print(list) 
-for x in range(97,123):
-    a=str(chr(x))
-    list.append(a)
-#print(list) 
-for x in range(10):
-    list.append(str(x))
-#print(list) 
-def gen_code():
-    s=''
-    for x in range(10):
-        a=random.choice(list)
-        s=s+a
-    print(s,end="    ")
-#生成200个激活码,每行10个输出
-count=0
-for x in range(200):
-    gen_code()
-    count+=1
-    if(count%10==0):
-        print()
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="261" startPos="40" endPos="40" selMode="0" lang="Normal Text" encoding="-1" filename="H:\&#x9A6C;&#x54E5;python&#x5B9E;&#x6218;&#x73ED;11&#x671F;\python-11\chengxiangzheng\week2\coupon.txt" backupFilePath="" originalFileLastModifTimestamp="1522636861" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="44929872" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
