@@ -5,3 +5,5 @@ for i in range(1,201):
     for _ in range(10):
         s.append(str(random.choice(lst)))
     print(''.join(s))
+
+#
