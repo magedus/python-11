@@ -1,0 +1,67 @@
+1、搭建好pytenv环境，理解local、global、shell3种方式区别
+	pyenv global 设置全局的 Python 版本，通过将版本号写入 ~/.pyenv/version 文件。
+
+	pyenv local 设置面向程序的本地版本，通过将版本号写入当前目录下的 .python-version 文件。
+
+
+	pyenv shell 设置面向 shell 的 Python 版本，通过设置当前 shell 的 PYENV_VERSION 环境变量的方式。
+
+
+
+2、打印出100以内的斐波那契数列，使用2种方法实现。
+方法1：
+
+i=0
+j=1
+while i <=1000:
+    tmp = i + j
+    i = j
+    j = tmp
+    if i<=100:
+        print(i,end="  ") 
+    else:
+        break
+
+
+方法2：
+lst=[1,1]
+for i in range(2,20):
+    if lst[i-1] + lst[i-2] > 100:
+        break
+    lst.append(lst[i-1] + lst[i-2])
+print(lst)
+
+
+3、使用 Python 实现随机生成 200 无重复激活码（或者优惠券），字符串长度大于5以上.
+
+import random
+
+lst=[]
+s = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
+for _ in range(200):
+    ch = ''
+    for _ in range(10):
+        ch += random.choice(s)
+    lst.append(ch)
+print(lst)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
