@@ -1,0 +1,1115 @@
+[33mcommit a1fae0fb1a41631aa41ea2e67b177e9e47700035[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Curry <iamspartacus@qq.com>
+Date:   Sun Mar 25 23:07:31 2018 +0800
+
+    modified:HelloGit.txt
+
+[33mcommit 9824a4d83b2220d59509dfe8958f051e87212a50[m
+Author: Curry <iamspartacus@qq.com>
+Date:   Sun Mar 25 23:01:08 2018 +0800
+
+    new file
+
+[33mcommit 96b8fde167ba2b4bdd82c5ccfcc2ff503b7f3859[m
+Author: Curry <iamspartacus@qq.com>
+Date:   Sun Mar 25 22:54:20 2018 +0800
+
+    git rm -rf --cached Curry/week1
+
+[33mcommit a410b6441a52acb923c4984dfa3c45e21910b3ff[m
+Author: Curry <iamspartacus@qq.com>
+Date:   Sun Mar 25 22:18:39 2018 +0800
+
+    modified:Curry/week1/HelloGit.txt
+
+[33mcommit c8166ce7ba921ee3e1ad494a1e1d92e5ea7cc546[m
+Author: Curry <iamspartacus@qq.com>
+Date:   Sun Mar 25 22:09:14 2018 +0800
+
+    new file Curry
+
+[33mcommit a00d42968e61fd13539091fdfe7d76982d2ef6ef[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 16f17bb b89c3d7
+Author: cxzcup <865452248@qq.com>
+Date:   Sun Mar 25 20:16:40 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit b89c3d705b8b398708ec3a948d6a817a6254571d[m
+Author: ProgrammerCurry <37427764+ProgrammerCurry@users.noreply.github.com>
+Date:   Sun Mar 25 19:03:08 2018 +0800
+
+    Delete week1
+
+[33mcommit ce661fcee602c38b6b02144f69312cc3f0e7d6ef[m
+Author: ProgrammerCurry <37427764+ProgrammerCurry@users.noreply.github.com>
+Date:   Sun Mar 25 18:57:07 2018 +0800
+
+    Create week1
+
+[33mcommit 9910bad4f3bfa890a708ed540a566c218f687555[m
+Author: ProgrammerCurry <37427764+ProgrammerCurry@users.noreply.github.com>
+Date:   Sun Mar 25 18:54:04 2018 +0800
+
+    Delete Curry
+
+[33mcommit 9541c586d43674489872d5a4cf30173bf0c1ecc1[m
+Author: ProgrammerCurry <37427764+ProgrammerCurry@users.noreply.github.com>
+Date:   Sun Mar 25 18:53:06 2018 +0800
+
+    Curry
+
+[33mcommit fa8522e2190a9085590fcd376e34ce74f5f6bba2[m
+Author: sunyi <fzusuny@163.com>
+Date:   Sun Mar 25 18:48:15 2018 +0800
+
+    sunyi's homework2
+
+[33mcommit 16f17bbe3c61ad12a26b33ebf7582d83310a4652[m
+Author: cxzcup <865452248@qq.com>
+Date:   Sun Mar 25 18:35:27 2018 +0800
+
+    cxz
+
+[33mcommit ccb16ee0ab853511baea46bd62e492c9eea72a0d[m
+Merge: 58d9575 4088cc7
+Author: sunyi <fzusuny@163.com>
+Date:   Sun Mar 25 18:27:46 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 58d95757869ff81b4e990d1e087ebcaf274106bd[m
+Author: sunyi <fzusuny@163.com>
+Date:   Sun Mar 25 18:21:44 2018 +0800
+
+    sunyi
+
+[33mcommit 4088cc7ede210787192e8aa476e8689722acdcbe[m
+Author: cxzcup <865452248@qq.com>
+Date:   Sun Mar 25 18:02:14 2018 +0800
+
+    delete
+
+[33mcommit 5a4fa60ca2dfca70af4df0d64ef25743bd3ef3b3[m
+Author: cxzcup <865452248@qq.com>
+Date:   Sun Mar 25 18:00:25 2018 +0800
+
+    welcome
+
+[33mcommit f1c4a05ef05b7d002effd80da81cf3e12e7e29d5[m
+Author: cxzcup <865452248@qq.com>
+Date:   Sun Mar 25 17:52:52 2018 +0800
+
+    first
+
+[33mcommit 381927f27404d166e1d5e37d860fcaac6e98b403[m
+Author: cxzcup <865452248@qq.com>
+Date:   Sun Mar 25 17:52:07 2018 +0800
+
+    second
+
+[33mcommit 8ea45f7eabf97754f414d448f7d453956dddbc61[m
+Author: cxzcup <865452248@qq.com>
+Date:   Sun Mar 25 17:51:19 2018 +0800
+
+    change1
+
+[33mcommit e8730a58f8fd5282553275c8e9a6443573c139c2[m
+Author: cxzcup <36144736+cxzcup@users.noreply.github.com>
+Date:   Sun Mar 25 17:22:43 2018 +0800
+
+    cxz
+    
+    test
+
+[33mcommit 8d0d5f5202d01bac97c5ef6d7e515513a575ad7c[m
+Merge: 97b3ea6 36c83eb
+Author: Patrick Zhang <17303954@qq.com>
+Date:   Sun Mar 25 15:28:07 2018 +0800
+
+    ZhangRuijie's Week1 homework
+
+[33mcommit 97b3ea63164cee89cff493c85ff62c2586ef450d[m
+Author: Patrick Zhang <17303954@qq.com>
+Date:   Sun Mar 25 15:16:40 2018 +0800
+
+    ZhangRuiJie's homework for week01
+
+[33mcommit 36c83eb6067c7b5b3392cf9a045b6ede1fd979ef[m
+Author: laykey8 <2778038720@qq.com>
+Date:   Sun Mar 25 15:15:26 2018 +0800
+
+    改变
+
+[33mcommit f09ee29121b5a57cfed90b387bae24b2f22d1a76[m
+Author: laykey8 <2778038720@qq.com>
+Date:   Sun Mar 25 15:14:47 2018 +0800
+
+    删除
+    
+    删除
+
+[33mcommit 6a42cdb87508c99fd50f0852763553cb7bb69302[m
+Author: laykey8 <2778038720@qq.com>
+Date:   Sun Mar 25 15:11:59 2018 +0800
+
+    test
+    
+    week3 test2
+
+[33mcommit 98842cca16d8ee135821708414a78113f439247b[m
+Author: daipenxiang <daipenxiang@163.com>
+Date:   Sat Mar 24 23:16:20 2018 +0800
+
+    week
+
+[33mcommit b10cf9334e0e29f7f6c5052c78e723431cad3e09[m
+Author: daipenxiang <daipenxiang@163.com>
+Date:   Sat Mar 24 23:10:51 2018 +0800
+
+    del_duan
+
+[33mcommit b5eee005120399095de7af01429da824164de777[m
+Author: daipenxiang <daipenxiang@163.com>
+Date:   Sat Mar 24 23:07:58 2018 +0800
+
+    duan_week1
+
+[33mcommit 3cb9f1b10dc75abae1d938909860cf4601a46310[m
+Author: daipenxiang <daipenxiang@163.com>
+Date:   Sat Mar 24 23:04:26 2018 +0800
+
+    duan
+
+[33mcommit 28c4b594fd92a06e4108f4fe206b6cacc7293d7a[m
+Merge: a39e167 ec6b57a
+Author: lilulu1014 <154972099@qq.com>
+Date:   Sat Mar 24 21:55:38 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit ec6b57a436568c9e3ec09a9016eedbc02521bbae[m
+Author: 807985143@qq.com <807985143@qq.com>
+Date:   Sat Mar 24 21:57:43 2018 +0800
+
+    second week test
+
+[33mcommit 8f288f480233c39c3908a1ffdffbe541dc773358[m
+Author: 807985143@qq.com <807985143@qq.com>
+Date:   Sat Mar 24 21:55:27 2018 +0800
+
+    hello
+
+[33mcommit a39e167209362e6204dd4cfddfff3afa78a4d758[m
+Author: lilulu1014 <154972099@qq.com>
+Date:   Sat Mar 24 21:53:12 2018 +0800
+
+    first homework
+
+[33mcommit 2347a962e1b8ba3698912e9385985902efbe7f94[m
+Merge: 9281107 ce710ac
+Author: Dkaile <807985143@qq.com>
+Date:   Sat Mar 24 21:41:25 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit ce710acfe71e012a9b6c813b94de856e394933b7[m
+Author: daipenxiang <daipenxiang@163.com>
+Date:   Sat Mar 24 21:15:26 2018 +0800
+
+    duanpeng_week1
+
+[33mcommit 92811076f9265f5075dd78cd2048700e9ab19caa[m
+Author: Dkyle <807985143@qq.com>
+Date:   Sat Mar 24 21:04:27 2018 +0800
+
+    week1 test
+
+[33mcommit 7ce1f67316432ac5742ff6418db567155fac8715[m
+Author: microwave012 <32404139+microwave012@users.noreply.github.com>
+Date:   Sat Mar 24 00:28:22 2018 -0700
+
+    Delete Chenyi
+
+[33mcommit b62e65c9181ddb73ac5790859ac28a06097e4083[m
+Author: microwave012 <32404139+microwave012@users.noreply.github.com>
+Date:   Sat Mar 24 00:21:10 2018 -0700
+
+    Create Chenyi
+
+[33mcommit 68e6c0374bc3f03cc2cfa0b26734ead4c8bf0dd1[m
+Merge: e651640 13c0704
+Author: zhangshengquan <179866729@qq.com>
+Date:   Sat Mar 24 12:40:01 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+    *
+
+[33mcommit e6516403a6f00fff6272dfe27403d441ac7ef73e[m
+Author: zhangshengquan <179866729@qq.com>
+Date:   Sat Mar 24 12:35:09 2018 +0800
+
+    add a file
+
+[33mcommit 13c0704f3b161d35634a3c927b4977a833441c84[m
+Author: Linran <zhenji_qu@126.com>
+Date:   Sat Mar 24 12:23:13 2018 +0800
+
+    add quzhenji's first task
+
+[33mcommit ae8f4bba4482cd051d7d524da7199d39d3a42f91[m
+Author: zjsaber <37628204+zjsaber@users.noreply.github.com>
+Date:   Sat Mar 24 08:41:29 2018 +0800
+
+    Delete p11-hubo
+
+[33mcommit f127ef001cc8fdb504cf05afb45f09cd899948ba[m
+Author: zjsaber <37628204+zjsaber@users.noreply.github.com>
+Date:   Sat Mar 24 08:11:01 2018 +0800
+
+    Create p11-hubo
+
+[33mcommit 1ae4a6f682cc9aa5235380b4cf43f908941caf23[m
+Author: zhanwei <916431815@qq.com>
+Date:   Fri Mar 23 21:21:55 2018 +0800
+
+    ZhanWei/
+
+[33mcommit 4ab6548ac1424f1e95062b7d87ebccf49d27750a[m
+Author: gc89 <guocan89@163.com>
+Date:   Fri Mar 23 15:31:47 2018 +0800
+
+    guocan
+
+[33mcommit b42454583a9452089ce338cd3be4e4e32e367b6d[m
+Author: gc89 <guocan89@163.com>
+Date:   Fri Mar 23 15:04:26 2018 +0800
+
+    guocan
+
+[33mcommit 01c31299b107c5eba42e9283b6f079f5a4c3bc6f[m
+Author: pluto <kangdingyong@jinkejoy.com>
+Date:   Fri Mar 23 13:07:33 2018 +0800
+
+    fxi emp
+
+[33mcommit a7a04d1bc7cc0236b7e4661774ac966a1ac2c428[m
+Author: pluto <kangdingyong@jinkejoy.com>
+Date:   Fri Mar 23 13:04:37 2018 +0800
+
+    fix change
+
+[33mcommit f4a83424e528fa4d776d2c4af39f45d3cd4f7963[m
+Author: pluto <kangdingyong@jinkejoy.com>
+Date:   Fri Mar 23 12:55:02 2018 +0800
+
+    A
+
+[33mcommit 02e0036e852b232168cd58a1c629d22dd953dd3c[m
+Author: ProgrammerCurry <37427764+ProgrammerCurry@users.noreply.github.com>
+Date:   Fri Mar 23 11:03:45 2018 +0800
+
+    Delete Curry
+
+[33mcommit 28a13ccec833e5d34538ed51e326feafb7a41b29[m
+Author: ProgrammerCurry <37427764+ProgrammerCurry@users.noreply.github.com>
+Date:   Fri Mar 23 11:02:42 2018 +0800
+
+    Create Curry
+
+[33mcommit 526bf012fade2f8494ab76f2749c29ef6ff3162c[m
+Author: chencheng <ericchen0504@.com>
+Date:   Fri Mar 23 10:59:08 2018 +0800
+
+    first
+
+[33mcommit bf9fec265dda3a4fbd28047da5bd6cce9d1050e0[m
+Author: YipengLiu0 <37476604+YipengLiu0@users.noreply.github.com>
+Date:   Fri Mar 23 10:43:08 2018 +0800
+
+    liuyipeng
+
+[33mcommit 02eeabce5f5994ff4cc785c1649e9338ffc33179[m
+Merge: 46d90ec ada7536
+Author: leodong88 <2601040818@qq.com>
+Date:   Thu Mar 22 23:22:00 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit ada7536b0ee847c3dc3de71d97774899fbf2abfe[m
+Author: Elaine Huang <elainehuang@Elaines-MacBook-Pro.local>
+Date:   Thu Mar 22 10:20:22 2018 -0500
+
+    add more folder
+
+[33mcommit 2af0748bea562ea073b8dfd79f60db4da187d2fe[m
+Author: Elaine Huang <elainehuang@Elaines-MacBook-Pro.local>
+Date:   Thu Mar 22 10:15:53 2018 -0500
+
+    ch
+
+[33mcommit 46d90ec0200d949164db7ca48361024650d6daf9[m
+Author: leodong88 <2601040818@qq.com>
+Date:   Thu Mar 22 23:14:21 2018 +0800
+
+    god bless you
+
+[33mcommit 5dbf53fa161ea62f583fcd3f1d5d95bebf142de5[m
+Author: Elaine Huang <elainehuang@Elaines-MacBook-Pro.local>
+Date:   Thu Mar 22 10:13:34 2018 -0500
+
+    ch
+
+[33mcommit 08f29d17e569d2c123181d569ab29cffd00df125[m
+Author: shitukeji <shitukeji@163.com>
+Date:   Thu Mar 22 22:09:34 2018 +0800
+
+    第二次提交
+
+[33mcommit b53b78f573730e10208d0c464bbee4a43b8002b3[m
+Author: suqiang004 <170745539@qq.com>
+Date:   Thu Mar 22 21:53:12 2018 +0800
+
+    sqq's homework directory
+
+[33mcommit 427ce1dccb5501cd761f9921fe5723f68cca4231[m
+Merge: b4707ee acf9668
+Author: JianAi1314 <JianAi1314@users.noreply.github.com>
+Date:   Thu Mar 22 21:21:45 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit b4707ee06e04e3352c69fb7d18b84acc3b86adc1[m
+Author: JianAi1314 <JianAi1314@users.noreply.github.com>
+Date:   Thu Mar 22 21:20:16 2018 +0800
+
+    上传文件测试
+
+[33mcommit acf96680a9eb0e671844035fdbd19d69888b3a30[m
+Merge: 86ccd3e 27b668e
+Author: laykey8 <2778038720@qq.com>
+Date:   Thu Mar 22 21:17:18 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 27b668e7bd9de304ce78a768d34e1f357279bd80[m
+Merge: 7db7767 7f988c7
+Author: lsclpangpang <80654925@qq.com>
+Date:   Thu Mar 22 21:11:51 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 86ccd3eacc32da8ed151d043c376dbac916cd0b7[m
+Author: laykey8 <2778038720@qq.com>
+Date:   Thu Mar 22 21:06:46 2018 +0800
+
+    xiewei's homework directory
+
+[33mcommit 7f988c77c39ca0c267d6e4a55c9ae53283743ab0[m
+Author: 471406493 <471406493@qq,com>
+Date:   Thu Mar 22 21:04:25 2018 +0800
+
+    homework
+
+[33mcommit 7db7767c3dc137bdbf493bff3889df336dcef7ba[m
+Author: lsclpangpang <80654925@qq.com>
+Date:   Thu Mar 22 20:56:30 2018 +0800
+
+    lipangpang
+
+[33mcommit fa187be1a908b7b0d0da4a0c549cf3042e3012ef[m
+Author: root <645121345@qq.com>
+Date:   Thu Mar 22 19:45:19 2018 +0800
+
+    delete
+
+[33mcommit 9772926d1e416a6319991cb372d51d8d5fcac177[m
+Author: root <645121345@qq.com>
+Date:   Sun Mar 18 02:30:33 2018 +0800
+
+    hello python
+
+[33mcommit 3d9358d1daf7fae7a6cf2569852582174940d6b1[m
+Author: root <645121345@qq.com>
+Date:   Sun Mar 18 02:15:29 2018 +0800
+
+    first commit
+
+[33mcommit fa10cb64df5d2d22485ef89462e01feef015da35[m
+Author: 631690767 <37525895+631690767@users.noreply.github.com>
+Date:   Thu Mar 22 16:34:46 2018 +0800
+
+    Hello!
+
+[33mcommit 5bb61a18dd368ba7406d29fd97b6b15a510fe206[m
+Merge: 03541dd 6ceb01c
+Author: siqin123 <314788157@qq.com>
+Date:   Thu Mar 22 15:47:52 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 03541dd2aaa4a5c5b2a1ba9685e69116b0cb5f95[m
+Author: siqin123 <314788157@qq.com>
+Date:   Thu Mar 22 15:37:42 2018 +0800
+
+    siqin123
+
+[33mcommit 6ceb01c39e6c395267e4eae91919c72e90542ed7[m
+Author: ChewBai <37644864+ChewBai@users.noreply.github.com>
+Date:   Thu Mar 22 15:31:53 2018 +0800
+
+    cn
+
+[33mcommit 1b1c06a95f11c478a819acb184c4250602fe8535[m
+Author: maye123456 <237252806@qq.com>
+Date:   Thu Mar 22 15:12:32 2018 +0800
+
+    aaa
+
+[33mcommit 553bf04680bb36af9e08fb69d68cf4e302eef44e[m
+Author: maming <752644123@qq.com>
+Date:   Thu Mar 22 14:58:10 2018 +0800
+
+    add maming task
+
+[33mcommit 00e68dc968bc4c11920895d7f47140360817dac2[m
+Author: zsq6662003 <37570321+zsq6662003@users.noreply.github.com>
+Date:   Thu Mar 22 14:34:47 2018 +0800
+
+    Delete zhangshengquan
+
+[33mcommit cab789c56fa52b8077e63fbb1ea085786ceb3f81[m
+Author: zsq6662003 <37570321+zsq6662003@users.noreply.github.com>
+Date:   Thu Mar 22 14:32:59 2018 +0800
+
+    Create zhangshengquan
+
+[33mcommit 7232ebb6b0172d2712837d10e8e41625e8a9a77c[m
+Author: koushuige <37529147+koushuige@users.noreply.github.com>
+Date:   Thu Mar 22 14:18:25 2018 +0800
+
+    jowin's homework directory
+
+[33mcommit 226c021de6bc97b753107f42e703c53d5ff7c179[m
+Author: daysunshine <1558526652@qq.com>
+Date:   Thu Mar 22 13:58:30 2018 +0800
+
+    Create Homework
+
+[33mcommit c3b0ceabefdccf30ecd012417c21fe398b41ea29[m
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Thu Mar 22 05:45:10 2018 +0800
+
+            deleted:    chenguozhu/week3/week1/.gitkeep
+            deleted:    chenguozhu/week3/week2/test.txt
+
+[33mcommit 834851888cd57a20fb58f4f34cc78d7cdfd9ccc5[m
+Merge: 1c84a2a a0b5655
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Thu Mar 22 05:41:51 2018 +0800
+
+    Merge branch 'master' of github.com:magedus/python-11
+
+[33mcommit a0b5655687a83cab46b0c4b0bc3dd832e205d69a[m
+Author: gaoyp27 <gaoyp27@126.com>
+Date:   Thu Mar 22 13:04:55 2018 +0800
+
+    rm test
+
+[33mcommit 7a70dfa21270cb1dc180bac5b472a00c6a22e4db[m
+Author: gaoyp27 <gaoyp27@126.com>
+Date:   Thu Mar 22 12:51:44 2018 +0800
+
+    mytest
+
+[33mcommit 5a2ff42342a344d38f4da9ee6dfeaf646f782aa8[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 23:48:54 2018 -0500
+
+    Delete week01
+
+[33mcommit 0ee09e0d82f32ca2c4f147283549c058594d4306[m
+Author: Elaine Huang <elainehuang@Elaines-MacBook-Pro.local>
+Date:   Wed Mar 21 23:43:21 2018 -0500
+
+    ch
+
+[33mcommit 2fb849de7cb57e3089393703bbd0c7e46c4a004c[m
+Author: shenhaiyan11 <605465982@qq.com>
+Date:   Thu Mar 22 12:28:46 2018 +0800
+
+    test
+    
+    test update
+
+[33mcommit 5b7c699f749600eea47385f31138dd41f86fb311[m
+Merge: 959a599 434c287
+Author: shenhaiyan11 <605465982@qq.com>
+Date:   Thu Mar 22 12:27:55 2018 +0800
+
+    Merge branch 'master' of github.com:magedus/python-11
+
+[33mcommit 434c2875cf9512fae40dc14abb206f7b2b37002e[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 23:24:02 2018 -0500
+
+    Create hw1
+
+[33mcommit 6f938956d58a88fecf232a582a6c94eb2b474164[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 23:23:47 2018 -0500
+
+    Delete hw1
+
+[33mcommit 2000920dc727e0608b4058463dadf2c29465e616[m
+Author: Elaine Huang <elainehuang@Elaines-MacBook-Pro.local>
+Date:   Wed Mar 21 23:18:35 2018 -0500
+
+    week01
+    
+    hw1
+
+[33mcommit 38ebf9809c2c542fb784663b13b61359e1584401[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 23:13:27 2018 -0500
+
+    Delete homework 2 327(2).Rmd
+
+[33mcommit fa0eb1454dce4da9e63666281349df0790d4ab8f[m
+Author: Jason.Z <jiexinzhang@sina.cn>
+Date:   Thu Mar 22 12:10:20 2018 +0800
+
+    创建作业文件夹
+    
+    创建作业文件夹
+
+[33mcommit 62a5b180c1b9bd3eb448dc34a6c6cf58e4c8acbd[m
+Author: Struggle-2018 <37474807+Struggle-2018@users.noreply.github.com>
+Date:   Thu Mar 22 12:05:51 2018 +0800
+
+    第四周作业
+
+[33mcommit 9b8567354bf5caa5c917512694d19ad4fd545ed5[m
+Author: Struggle-2018 <37474807+Struggle-2018@users.noreply.github.com>
+Date:   Thu Mar 22 12:05:28 2018 +0800
+
+    第三周作业
+
+[33mcommit 424ddaf5fb30d4a7fd0ebbf5aabe3c3829e6a6b8[m
+Author: Struggle-2018 <37474807+Struggle-2018@users.noreply.github.com>
+Date:   Thu Mar 22 12:04:42 2018 +0800
+
+    第二周作业
+
+[33mcommit f2c9251a35cce68c1d68f0e2bacf6b417b2c0ab3[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 23:04:19 2018 -0500
+
+    Add files via upload
+
+[33mcommit 5d0edc77c577bdb9678b361ce96f9bc1a1170757[m
+Author: Struggle-2018 <37474807+Struggle-2018@users.noreply.github.com>
+Date:   Thu Mar 22 12:04:06 2018 +0800
+
+    第一周作业
+
+[33mcommit aa13a6b5ce8e81d6fb668514a5ab32db5ec983fa[m
+Author: Struggle-2018 <37474807+Struggle-2018@users.noreply.github.com>
+Date:   Thu Mar 22 11:59:40 2018 +0800
+
+    Create README.md
+
+[33mcommit 06bc6a42542ae7d92921910b3ea79f69a8c902cb[m
+Author: lianshitong <lianshitong@gmail.com>
+Date:   Thu Mar 22 11:58:36 2018 +0800
+
+    第一周作业提交
+
+[33mcommit 3e88cd86973c7653d3897b0a0c051fdb54a9d128[m
+Merge: 6458d6d 80c69a2
+Author: Elaine Huang <elainehuang@Elaines-MacBook-Pro.local>
+Date:   Wed Mar 21 22:55:10 2018 -0500
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 80c69a230c8785fac5970abd18e25bc739436b6a[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:54:02 2018 +0800
+
+    Delete job
+
+[33mcommit 380860ad4af7f0fe530de9e4349e58d1621e0ad3[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:53:51 2018 +0800
+
+    Delete job
+
+[33mcommit 40bdb966cc25c169526c36bc1da02a3d079062ae[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:53:10 2018 +0800
+
+    Create job3.py
+
+[33mcommit e3c98a19b634dc1103741d3fe08e0a959d3b5d3c[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:52:47 2018 +0800
+
+    Create job2.py
+
+[33mcommit 0cee839ff8356f7a7f10cddbb2f5e7fb11032f1f[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:52:27 2018 +0800
+
+    Create job1.py
+
+[33mcommit 98aade815edd55556e3449a98a9a1bcc1fe93084[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:51:23 2018 +0800
+
+    Create job
+
+[33mcommit e837326cbd687e858b8fb4cd2edfb089152e0864[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:51:05 2018 +0800
+
+    Create job
+
+[33mcommit be0dcf16360bf8966e81a617006ac0ef251b5329[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:50:44 2018 +0800
+
+    Delete job
+
+[33mcommit 94e083b1ffe113b4ea59244f98980fadf6b74b28[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:49:22 2018 +0800
+
+    Create job
+
+[33mcommit 98e25dcfd1455f194c5810792807576be0a65699[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:46:34 2018 +0800
+
+    Delete note
+
+[33mcommit 7108a192c1e436cec09c71291d3ecb5efa27fe29[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:45:59 2018 +0800
+
+    Create note
+
+[33mcommit 87f15b03c4c81d69be00fd8b50dc9a6c6b36dc02[m
+Merge: 8434d52 bc9a416
+Author: gaoyp27 <gaoyp27@126.com>
+Date:   Thu Mar 22 11:42:53 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit bc9a4169d7455875aa35274c9de6b0236ca2e970[m
+Author: Summer721 <390551933@qq.com>
+Date:   Fri Mar 23 11:40:13 2018 +0800
+
+    ...
+
+[33mcommit f235345d041a0dc32db022d519efe82183e32d27[m
+Author: Summer721 <390551933@qq.com>
+Date:   Fri Mar 23 11:37:02 2018 +0800
+
+    niechenxi add
+
+[33mcommit 8434d52644cafd22fc2d1db8b4bef136cad4690f[m
+Author: gaoyp27 <gaoyp27@126.com>
+Date:   Thu Mar 22 11:37:28 2018 +0800
+
+    mkdir gaoyp27
+
+[33mcommit 959a599c99758c888f8d5cee8131b90304d1f408[m
+Author: pluto <kangdingyong@jinkejoy.com>
+Date:   Thu Mar 22 11:35:25 2018 +0800
+
+    a
+
+[33mcommit 6458d6dd990d32bd1f74887ae8f89492adfcd50d[m
+Merge: 7be8ef7 6e49b06
+Author: shenhaiyan11 <605465982@qq.com>
+Date:   Thu Mar 22 11:32:22 2018 +0800
+
+    shenhaiyan's homework directory
+
+[33mcommit 7be8ef71ec1b7c2b83a9be5edfde25f76020f36b[m
+Author: shenhaiyan11 <605465982@qq.com>
+Date:   Thu Mar 22 11:27:30 2018 +0800
+
+    shenhaiyan's homework directory
+
+[33mcommit 6e49b06c1d7e46bb816cae8f163bc6cdc52336f2[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:27:05 2018 +0800
+
+    Delete a-lichaoming
+
+[33mcommit bd97b73dc2c1a4a48c2359f0f8a0d9f30dacee1d[m
+Author: LCM <37533634+LCM89@users.noreply.github.com>
+Date:   Thu Mar 22 11:26:19 2018 +0800
+
+    Create a-lichaoming
+
+[33mcommit 2d336c9dc79c62ba7071bba506359b1147f9865a[m
+Author: wuyuepeng1234 <wuyuepeng1234@126.com>
+Date:   Thu Mar 22 10:48:34 2018 +0800
+
+    update
+
+[33mcommit 15afe9cca26b7147365f00bb9cfc8cc44f839426[m
+Merge: a982f66 e57cca9
+Author: wuyuepeng1234 <wuyuepeng1234@126.com>
+Date:   Thu Mar 22 10:43:57 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit a982f6618610ce37dfdfd94bc102245e91c08c3d[m
+Author: wuyuepeng1234 <wuyuepeng1234@126.com>
+Date:   Thu Mar 22 10:36:37 2018 +0800
+
+    update
+
+[33mcommit e57cca934c7e687b6f312bacf75090ecd4d09fbe[m
+Author: JianAi1314 <heihu520@gmail.com>
+Date:   Thu Mar 22 10:34:22 2018 +0800
+
+    create homeworks
+
+[33mcommit 8785dd284950d9a73fc1010682ef0df9175a8a24[m
+Author: JianAi1314 <heihu520@gmail.com>
+Date:   Thu Mar 22 10:29:21 2018 +0800
+
+    delete
+
+[33mcommit edea9e4f0def8125ada8951c9584e585b43c8863[m
+Merge: eda4a32 a9a0dff
+Author: JianAi1314 <heihu520@gmail.com>
+Date:   Thu Mar 22 10:25:49 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit a9a0dff4d1b5f38a1c70c343ea9faa150be7720f[m
+Author: wuyuepeng1234 <wuyuepeng1234@126.com>
+Date:   Thu Mar 22 10:16:09 2018 +0800
+
+    wuyuepeng's work
+
+[33mcommit eda4a328a854f060aaabf755cea5b17bb9eb3a35[m
+Author: JianAi1314 <heihu520@gmail.com>
+Date:   Thu Mar 22 10:21:25 2018 +0800
+
+    create homework
+
+[33mcommit 9f90e28490a6f65bda57de8faf717a89d486d4ee[m
+Merge: 4a85dc8 810582e
+Author: litao <tao.li@rootant.com>
+Date:   Thu Mar 22 10:14:54 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 810582ea21d589a5fc8097f7542522309fdcebc5[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 21:13:39 2018 -0500
+
+    Create hw3
+
+[33mcommit 79f0dcab1fac781966e616e3a01167f8febe35c3[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 21:13:27 2018 -0500
+
+    Delete week01
+
+[33mcommit 4a85dc829e90cb635b9505dba1f4b240817a8abb[m
+Author: litao <tao.li@rootant.com>
+Date:   Thu Mar 22 10:13:19 2018 +0800
+
+    week init
+
+[33mcommit d7c9ad966a9ae19f64d1f9cdfefece726e10684b[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 21:13:10 2018 -0500
+
+    Create hw2
+
+[33mcommit e6b6c83dda9d7b4b784d07db4a484161bc63587f[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 21:12:44 2018 -0500
+
+    Create hw1
+
+[33mcommit 97c537305c82ac3d38416d7d5392ceff2e09115b[m
+Merge: 5c4acab c499661
+Author: litao <tao.li@rootant.com>
+Date:   Thu Mar 22 10:11:02 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit c4996615d0f8540f6ba353e024de5065bf0177dc[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 21:10:29 2018 -0500
+
+    Create week01
+
+[33mcommit 5c4acabe46510cfaf395cda350d4e848855769cb[m
+Author: litao <tao.li@rootant.com>
+Date:   Thu Mar 22 10:08:54 2018 +0800
+
+    init
+
+[33mcommit 6e173b6c3c2459a3e2396fb238956669713a64e1[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 21:01:20 2018 -0500
+
+    Delete ElaineHuang
+
+[33mcommit a3bdddde5739e7a81c36a673d5ee101d55620e95[m
+Author: xhuang266 <37528850+xhuang266@users.noreply.github.com>
+Date:   Wed Mar 21 21:01:05 2018 -0500
+
+    Create ElaineHuang
+
+[33mcommit 339d971fe5d069cf0a1f1204307f9bf272d9db40[m
+Merge: 17c1a53 86477bb
+Author: mujunjie <279719304@qq.com>
+Date:   Thu Mar 22 09:59:32 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 17c1a53442cdd3078a5e77a88b6caa7b30f04e4f[m
+Merge: b98a656 9c5d6d5
+Author: mujunjie <279719304@qq.com>
+Date:   Thu Mar 22 09:58:47 2018 +0800
+
+    Merge branch 'master' of https://github.com/magedus/python-11
+
+[33mcommit 86477bbd5e80fc6c2f9cb0e636df2402abf22634[m
+Author: shitukeji <shitukeji@163.com>
+Date:   Thu Mar 22 09:58:36 2018 +0800
+
+    test
+
+[33mcommit 6cb357a0674d8a677fb7c699418cbb2926626dcc[m
+Merge: 8a57b1a 9c5d6d5
+Author: shitukeji <shitukeji@163.com>
+Date:   Thu Mar 22 09:57:12 2018 +0800
+
+    Merge branch 'master' of github.com:magedus/python-11
+
+[33mcommit b98a656b1f75c72e6b354688f492458aa79ab906[m
+Author: mujunjie <279719304@qq.com>
+Date:   Thu Mar 22 09:53:35 2018 +0800
+
+    mujunjie's home work
+
+[33mcommit 8a57b1a70541056527f37f5a3c32999b664e6eb7[m
+Author: shitukeji <shitukeji@163.com>
+Date:   Thu Mar 22 09:52:53 2018 +0800
+
+    20180322
+
+[33mcommit 9c5d6d577a71e9a206fb7ac5c2c1fd992de8a2c8[m
+Author: root <root@jiujinsuo.(none)>
+Date:   Thu Mar 22 09:49:02 2018 +0800
+
+    create a study dir
+
+[33mcommit 1c84a2a8e8f7a78ccae1289a753d69ff7b32bd6b[m
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Thu Mar 22 05:40:51 2018 +0800
+
+    jowin's homework directory
+
+[33mcommit 9bb7e845975a7d22a18e79b58616b3dd4f43f658[m
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Thu Mar 22 05:37:04 2018 +0800
+
+            new file:   chenguozhu/week1/*
+            new file:   chenguozhu/week1/.gitkeep
+            new file:   chenguozhu/week2/*
+            new file:   chenguozhu/week3/test.txt
+            new file:   chenguozhu/week3/week1/.gitkeep
+            new file:   chenguozhu/week3/week2/test.txt
+
+[33mcommit 341dc4a798baf2d8093ef886cd1c531f80f93bec[m
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Tue Jan 16 14:56:17 2018 +0800
+
+            deleted:    python-11
+
+[33mcommit 4cacedae2e6f0c341f0c9cd6fc04ecc95b562659[m
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Tue Jan 16 14:54:27 2018 +0800
+
+            deleted:    chenguozhu
+            deleted:    python-11
+
+[33mcommit da7c03ef591adb5ec9b95090e4a58e2d40d80db2[m
+Merge: 00d3557 32f0641
+Author: liyang <619808473@qq.com>
+Date:   Wed Mar 21 23:09:35 2018 +0800
+
+    Merge branch 'master' of github.com:magedus/python-11
+
+[33mcommit 00d3557f325bfafd8abf573c93288748d4c635ce[m
+Author: liyang <619808473@qq.com>
+Date:   Wed Mar 21 22:59:55 2018 +0800
+
+    fightinggit add liyang/git add liyang/
+
+[33mcommit 61ae3e2ebbc4b420ada13ebd96f4ec481d1151fa[m
+Author: nirvana-chan916 <37569809+nirvana-chan916@users.noreply.github.com>
+Date:   Wed Mar 21 22:00:36 2018 +0800
+
+    Create chenguozhu
+
+[33mcommit 98a18fd5eca43f7b87ac86aa9ca8815d42ab3689[m
+Author: jowinchai <chaizaowen@163.com>
+Date:   Wed Mar 21 20:56:24 2018 +0800
+
+    jowin's homework directory
+
+[33mcommit 5dca0a8d14b1fd8c7816af1715988c134d4fb083[m
+Author: pluto <kangdingyong@jinkejoy.com>
+Date:   Wed Mar 21 18:15:32 2018 +0800
+
+    add keep empty
+
+[33mcommit 7ba1c7c8ed9193bf41489580480ef8156162c9ed[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 18:09:52 2018 +0800
+
+    Delete w1_first.py
+
+[33mcommit 7bdc7122b10b4462313577f5391c319b013f5e15[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 18:01:29 2018 +0800
+
+    create study dir
+    
+    create study dir
+
+[33mcommit 1dd5ecf018a91989c1e6e6c3f4bf704a41571ce1[m
+Author: MrNie <390551933@qq.com>
+Date:   Wed Mar 21 17:50:46 2018 +0800
+
+    Delete niechenxi
+
+[33mcommit a3dd88f0dcb3d946e4e1800ba64cbe3c60420d5c[m
+Author: MrNie <390551933@qq.com>
+Date:   Wed Mar 21 17:49:45 2018 +0800
+
+    Create niechenxi
+
+[33mcommit 59359b6be6bdc53e1f6d10a6e83669757c7f9c31[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 15:01:44 2018 +0800
+
+    Delete readme.py
+
+[33mcommit 9b299f161223784a7127a3d6258508f0822a5875[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 15:00:15 2018 +0800
+
+    Create readme.py
+    
+    Create the first week1 for study Python
+
+[33mcommit ca5f46038784aec0a909abc2b85ccd1208811669[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 14:53:56 2018 +0800
+
+    Delete week1
+    
+    delete
+
+[33mcommit 235747a215abd9d28a5d7a8c39306a245f770532[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 14:53:23 2018 +0800
+
+    P11-lixiaopeng/
+    
+    Create a study dir for Python
+
+[33mcommit fedc8d0d5b99ce3d270e4a654ed22158b12968c8[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 14:50:31 2018 +0800
+
+    Delete P11-lixiaopeng
+    
+    delete the file
+
+[33mcommit 97f3efbd3d701c80285db2925b0bc4eac9647f60[m
+Author: chlook <497297464@qq.com>
+Date:   Wed Mar 21 14:49:33 2018 +0800
+
+    P11-lixiaopeng
+    
+    Create a study dir for Python
+
+[33mcommit 48380f8a0e94252e7f5f355f97e698988e6cdb00[m
+Author: fogVsource <dbawww@126.com>
+Date:   Wed Mar 21 13:43:25 2018 +0800
+
+    Update README.md
+
+[33mcommit f8f31fabd52521ddebfc7be142ebd91bb297abec[m
+Author: fogVsource <dbawww@126.com>
+Date:   Wed Mar 21 13:18:41 2018 +0800
+
+    Update README.md
+
+[33mcommit 27dddb0d17cef2e6e6b53ceb4331680c2d3fe1ac[m
+Author: pluto <kangdingyong@jinkejoy.com>
+Date:   Wed Mar 21 13:16:07 2018 +0800
+
+    add example
+
+[33mcommit e1819b2160c11b948e1ea9942315d56d8e46cca2[m
+Merge: 7abad5b 7afbb97
+Author: magedu-python <37565803+magedu-python@users.noreply.github.com>
+Date:   Wed Mar 21 12:58:01 2018 +0800
+
+    Merge pull request #1 from simple2source/patch-1
+    
+    Update README.md
+
+[33mcommit 7afbb97a33662386c1eb38f32f6d2ce69b4814d1[m
+Author: fogVsource <dbawww@126.com>
+Date:   Wed Mar 21 12:45:14 2018 +0800
+
+    Update README.md
+
+[33mcommit 7abad5b6cd7e9f9561b15eac57a305cb7ae34ec6[m
+Author: magedu-python <37565803+magedu-python@users.noreply.github.com>
+Date:   Tue Mar 20 20:44:13 2018 +0800
+
+    Initial commit
+
+[33mcommit 32f06413db4f70b54384aee1dcf0526156a1e01c[m
+Merge: 0865349 46a206c
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Tue Jan 16 14:05:04 2018 +0800
+
+    Merge branch 'master' of github.com:magedus/python-11
+
+[33mcommit 46a206c4db2d60c3833bfeaa8d051922f458dd0e[m
+Author: shitukeji <shitukeji@163.com>
+Date:   Wed Mar 21 22:35:11 2018 +0800
+
+    new days
+
+[33mcommit 46131b1b197a6a9c472850c4b9f587531fb331f3[m
+Author: shitukeji <shitukeji@163.com>
+Date:   Wed Mar 21 22:24:15 2018 +0800
+
+    梦想成真!
+
+[33mcommit 08653495ef895c15328cb54cf8dba7dede55db0a[m
+Author: nirvana-chan916 <gzmp93@hotmail.com>
+Date:   Tue Jan 16 13:56:31 2018 +0800
+
+    first commit
