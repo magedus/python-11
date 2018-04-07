@@ -1,4 +1,4 @@
-#cxz.txt 位于当前目录下
+#cxz.txt 位于当前目录下,当前用户python。
 import re
 def get_word_num(place):
     with open(place,'r')as f: #打开文件，记作f

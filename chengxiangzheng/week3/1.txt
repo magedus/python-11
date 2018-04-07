@@ -1,4 +1,4 @@
-#判断输入元素是否在列表中
+#判断输入元素是否在列表中，先输入字符串
 n=input()
 list1=['x','y','z','cup']
 list1.append("welcome")
