@@ -10,3 +10,4 @@ for i in word_lst:
 for k,v in word_dic.items():
     print('the count of "{}" is {}'.format(k,v))
 
+f.close()
