@@ -1,0 +1,81 @@
+---
+- hosts: tomcat
+  remote_user: admin
+  tasks:
+    - name: add group
+      group: name={{ item.name }} gid={{ item.gid }} state=present
+      with_items:
+        - { name: 'admin',  gid: '200' }
+        - { name: 'mysql',  gid: '1100' }
+        - { name: 'tomcat', gid: '500' }
+        - { name: 'nginx',  gid: '1200' }
+        - { name: 'itsm',   gid: '800' }
+    - name: add user
+      user: name={{ item.name }} groups={{ item.group }},wheel  append=yes uid={{ item.uid }} state=present password={{ item.ups }} update_password=always
+      with_items:
+        - { name: 'admin',  uid: '200', group: 'admin', ups: '$6$uE6a2tr9WgiUBYZA$dhfJeGfPxH5FvFJvzs0XMaKBbW1i/wMKk/l3Prfcv8rA6ERz5XOKs2pPjIHADWO5k.fSzYUbp/lef0M7i.ik10' }
+        - { name: 'itsm',   uid: '800', group: 'itsm',  ups: '$6$aHzeZOJCD7Md2Utu$tRk80Ti/0E6BA.68vIaDsXdAcViGHOTSX1p/Sl.7rvCIZqNBYI0jnxOOWcDBXkfD3TOkzDa.bnvid4e9qSw8Q0' }
+        - { name: 'mysql',  uid: '1100', group: 'mysql',   ups: '$6$LRE.ClZdvMOPQfnb$k82FIoT3g48Kw2TmI8IjzyaRor31MT7kOG/stTokVpJZxk0JyEOlT9guKqj50iUvZGa7C70En8SXbtshNyav40' }
+        - { name: 'tomcat', uid: '500',  group: 'tomcat',  ups: '$6$Tw7AG16BHuePaotn$8TkMF.eokdDaV9xA1SDqLV3CNrXt8vbk63qFYlRbQCO5TeCl3znr7ztK0Ak0y8K3svG1oF02z5aoP8iI9ed7R1' }
+        - { name: 'nginx',  uid: '1200', group: 'nginx',   ups: '$6$frF9W8nyhkYv/t5m$msbHxhO.V3vf6irFNi3t2QSLb70XCj50nePT95.lR5qF9smzgVkfRKh3gwKFEwFnVWqVJcrFnMTIfQzggGIJh/' }
+    - name: disable crtl+alt+del
+      shell: systemctl mask ctrl-alt-del.target
+    - name: setting history and timeout
+      copy: src=profile dest=/etc/profile owner=root group=root mode=644
+      notify:
+        - reload profile
+    - name: error login deny
+      copy: src=password-auth-ac dest=/etc/pam.d/password-auth-ac owner=root group=root mode=644
+    - name: root login ssh
+      copy: src=sshd_config dest=/etc/ssh/sshd_config owner=root group=root mode=600
+      notify:
+        - restart ssh
+    - name: keep log 12 week
+      copy: src=logrotate.conf dest=/etc/logrotate.conf owner=root group=root mode=644
+    - name: config sudoer
+      copy: src={{ item.name }} dest={{ item.path}} owner=root group=root mode={{ item.mode }}
+      with_items:
+        - { name: 'sudoers',  path: '/etc/sudoers',  mode: '440' }
+        - { name: 'su',       path: '/etc/pam.d/su', mode: '644' }
+    - name: limit open file
+      copy: src={{ item }} dest=/etc/security/limits.d/{{ item }} owner=root group=root mode=644
+      with_items:
+        - core.conf
+        - nofile.conf
+        - nproc.conf
+      notify:
+        - clean 20-nproc
+      tags:
+        - temp
+    - name: disable ipv6
+      copy: src=net.conf dest=/etc/sysctl.d/net.conf owner=root group=root mode=644
+      notify:
+        - kernel parameter
+    - name: disable service
+      service: name={{ item }}  enabled=false state=stopped
+      with_items:
+        - postfix.service
+        - libvirtd.service
+        - firewalld.service
+        - cups.service
+        - avahi-daemon.service
+        - kdump.service
+    - name: disable selinux
+      copy: src=config dest=/etc/selinux/config owner=root group=root mode=644
+      notify:
+        - setting selinux
+    - name: passwd policy
+      copy: src=system-auth-ac dest=/etc/pam.d/system-auth-ac owner=root group=root mode=644
+    - name: ceshi jinja2
+      template: src=linshi.j2 dest=/tmp/testj2.txt
+  handlers:
+    - name: reload profile
+      shell: source /etc/profile
+    - name: restart ssh
+      shell: systemctl restart sshd
+    - name: kernel parameter
+      shell: sysctl -p;systemctl restart network
+    - name: clean 20-nproc
+      shell: find /etc/security/limits.d -type f -name "20-nproc*" |xargs rm -f
+    - name: setting selinux
+      shell: setenforce 0

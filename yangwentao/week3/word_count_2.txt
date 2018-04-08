@@ -1,0 +1,11 @@
+str1 = "shall final machiig,all surfaces shall.by examined by the wet magnetic all"
+str1 = str1.replace(',',' ').replace('.',' ')
+str2 = str1.split()
+words_dict = {}
+for i in str2:
+    if i not in words_dict:
+        words_dict[i] = 1
+    else:
+        words_dict[i] = words_dict[i] + 1
+for k,v in words_dict.items():
+    print(k,v)

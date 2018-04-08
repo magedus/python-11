@@ -1,0 +1,8 @@
+s1 = ['a','c','e','g','r']
+print("请输入一个字母判断是否在列表中", s1)
+n = input("请输入一个字母:")
+t = 1 if n in s1 else 0
+if t == 1:
+    print('{0} 在列表{1}中'.format(n,s1))
+else:
+    print('{0} 不在列表{1}中'.format(n, s1))

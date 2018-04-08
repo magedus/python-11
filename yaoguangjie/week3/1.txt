@@ -1,0 +1,19 @@
+lst=[]
+print("please input list,input 'quit' exit")
+while True:
+    tmp=input()
+    if tmp=='quit':
+         print(lst)
+         break
+    lst.append(tmp)
+
+
+print('input x')
+x=input()
+aa=len(lst)
+for i in range(aa):
+    if lst[i]==x:
+       print(1)
+       break
+else:
+    print(0)

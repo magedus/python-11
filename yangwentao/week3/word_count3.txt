@@ -1,0 +1,9 @@
+str1 = "shall final machiig,all surfaces shall.by examined by the wet magnetic all by"
+str1 = str1.replace(',',' ').replace('.',' ')
+word_count ={}
+str2 = str1.split()
+for i in str2:
+    word_count[i] = str2.count(i)
+
+for k,v in word_count.items():
+    print(k,v)
