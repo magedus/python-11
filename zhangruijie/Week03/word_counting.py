@@ -9,8 +9,17 @@ n = len(s)
 print("there are %d words in the Gettysburg Address,as well as %d different words" % (l,n))
 
 # calculate words frequency ... 
-d = dict.fromkeys(contents,0)
+freq ={}
 
-# after finish learning dict function 
+for w in contents:
+	if w not in freq:
+		freq[w] = 1
+	else :
+		freq[w] += 1
+
+print(sorted(freq.items()))
+
+		
+
 		
 	
