@@ -1,11 +1,12 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 # 判断是否是回文数
 
 def palindromic():
     while True:
         num = input('请输入一个5位正整数: ')
     
-    #判断输入的是否是5位正整数
+        #判断输入的是否是5位正整数
         if num.isdigit() and len(num) == 5:
             
             #判断是否是回文数
