@@ -1,0 +1,8 @@
+
+with open(r'G:\python11\python-11\yaoguangjie\week3\a.txt', 'r') as f:
+    lst=f.read()
+    print(lst)
+print()
+
+lst1=lst.split(' ')
+print('The total number of words is {}'.format(len(lst1)))

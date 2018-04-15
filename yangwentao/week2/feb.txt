@@ -1,0 +1,10 @@
+__author__ = 'yangwentao'
+feb = [1,1]
+n = 0
+for i in range(100):
+    feb.append(feb[i] + feb[i+1])
+    #n = n + 1
+    if feb[-1] > 100:
+        break
+feb.pop(-1)
+print(feb)
