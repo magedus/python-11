@@ -1,0 +1,28 @@
+]$ pyenv -h
+   local       Set or show the local application-specific Python version   #local用于指定公共环境
+   global      Set or show the global Python version   #global全局，通常禁用此项
+   shell       Set or show the shell-specific Python version   #shell会话级别
+   install     Install a Python version using python-build
+
+]$ pyenv virtualenv 3.5.3 magedu353   #magedu353为softlink，多出3.5.3/envs/magedu353和magedu353，如果与多人协同开发要用虚拟环境，且最好用虚拟环境，即此步创建的pyenv virtualenv 3.5.3 magedu353，若一个人使用可直接pyenv local VERSION公共环境；
+Requirement already satisfied: setuptools in /home/python/.pyenv/versions/3.5.3/envs/magedu353/lib/python3.5/site-packages
+Requirement already satisfied: pip in /home/python/.pyenv/versions/3.5.3/envs/magedu353/lib/python3.5/site-packages
+[python@tmsapp cmdb]$ pyenv versions
+* system (set by /home/python/magedu/projects/.python-version)
+  3.5.3
+  3.5.3/envs/magedu353
+  3.6.1
+  magedu353
+]$ pyenv local magedu353   #此步操作后命令提示符会改变，之后每次进入~/magedu/projects/cmdb这个目录后命令提示符都会变；
+(magedu353) [python@tmsapp cmdb]$ pyenv version
+magedu353 (set by /home/python/magedu/projects/cmdb/.python-version)
+(magedu353) [python@tmsapp cmdb]$ pip -V
+pip 9.0.1 from /home/python/.pyenv/versions/3.5.3/envs/magedu353/lib/python3.5/site-packages (python 3.5)
+
+(magedu353) [python@tmsapp cmdb]$ cd ..
+]$ mkdir web
+]$ cd web/
+]$ pyenv local 3.6.1
+]$ pip -V   #该版本的公共环境，若多人协同开发时会混，此方式不建议使用；
+pip 9.0.1 from /home/python/.pyenv/versions/3.6.1/lib/python3.6/site-packages (python 3.6)
+

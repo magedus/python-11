@@ -1,0 +1,7 @@
+s = [1,2,5,3,'a','e',69,4]
+isno = 1 in s
+if isno: 
+    print(1)
+else:
+    print(0)
+    
