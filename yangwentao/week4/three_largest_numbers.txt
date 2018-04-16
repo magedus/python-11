@@ -1,0 +1,33 @@
+第一种方法：
+import random
+lst = []
+for i in range(20):
+    lst.append(random.randrange(1,30))
+print(lst)
+lst.sort()
+print(lst)
+print("The three largest Numbers is {},{},{}".format(lst[-1],lst[-2],lst[-3]))
+
+
+
+
+
+第二种方法：
+import random
+lst = []
+for i in range(20):
+    lst.append(random.randrange(1,30))
+print(lst)
+for j in range(len(lst)):
+    flag = False
+    for k in range(len(lst) -1 -j):
+        if lst[k] >= lst[k+1]:
+            tmp = lst[k]
+            lst[k] = lst[k+1]
+            lst[k+1] = tmp
+            flag = True
+    if not flag:
+        break
+print(lst)
+print("The three largest Numbers is {},{},{}".format(lst[-1],lst[-2],lst[-3]))
+
