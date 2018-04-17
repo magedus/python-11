@@ -14,8 +14,10 @@ def randcommo(commo):
     commo_list = []
     for i in commo.keys():
         commo_list.extend([i] * commo[i])
-    print(random.choice(commo_list))
+    return random.choice(commo_list)
 
 
-randcommo(commo_dict)
+
+
+print(randcommo(commo_dict))
 # def commodity(rand_com):
