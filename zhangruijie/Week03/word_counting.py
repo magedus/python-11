@@ -2,7 +2,9 @@
 f = open('/home/python/ga.txt')
 raw_contents = f.read()
 f.close
-contents=raw_contents.split()
+# 不仅要考虑空格，还要去掉文中的 ，. ；
+#contents=raw_contents.split()
+contents=raw_contents.replace(',','').replace(';','').replace('.','').split()
 l = len(contents)
 s = set(contents)
 n = len(s)
