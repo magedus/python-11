@@ -4,6 +4,7 @@ p = Path('english.txt')
 
 with open(p.absolute(), 'r') as f:
 
-    r = f.read().replace(".","")
-    word_list= re.split("[\?\"\,\s]+", r)
-    print(len(word_list))
+    result = re.findall('[a-zA-Z]+(?:\'|\¡¯)?[a-zA-Z]*',f.read())
+
+print(result)
+print(len(result))
