@@ -1,21 +1,11 @@
 import random
 
-lst=[]
-lst1=[]
-
-d={'socks':10,'shoes':20,'fflop':30,'necklace':40}
-for k,v in d.items():
-    lst.append(k)
-    lst1.append(v)
-#print(lst)
-
-for i in range(len(lst1)):
-    m=int(lst1[i])
-    for j in range(m-1):
-        lst.append(lst[i])
-a=random.choice(lst)
-#print(lst,lst.count('necklace'))
-print(a)
+d1={'socks':10,'shoes':20,'fflop':30,'necklace':40}
+def prod(depot):
+    lst=[[k]*v for k,v in depot.items()]
+    lst1=[lst[i][j] for i in range(len(lst)) for j in range(len(lst[i]))]
+    return random.choice(lst1)
+print(prod(d1))
 
 #打乱随机
 alist=[1,2,3,4,5]
