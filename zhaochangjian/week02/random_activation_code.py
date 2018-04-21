@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-sss
+#使用 Python 实现随机生成 200 无重复激活码（或者优惠券），字符串长度大于5以上
 import random
 
 

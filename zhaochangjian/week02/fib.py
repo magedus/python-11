@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+#打印出100以内的斐波那契数列，使用2种方法实现
+
 import  datetime
 
 #递归
