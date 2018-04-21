@@ -7,6 +7,7 @@ def goods():
     Necklace = ['Necklace']*40
 
     all_goods = Socks + shoes + Slipper + Necklace
+    random.shuffle(all_goods)
 
     return random.choice(all_goods)
 
