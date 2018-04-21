@@ -1,0 +1,12 @@
+n = int(input("please input odd number:"))
+flag = True
+n = str(n)
+for i in range(len(n)//2):
+    if n[i] != n[len(n) -i -1]:
+        flag = False
+
+if flag:
+    print("the {} is huiwen numbers:".format(n))
+
+else:
+    print("the {} is not huiwen numbers:".format(n))

@@ -15,9 +15,13 @@ def words_count(file_text):
     with open(file_text, 'r') as f:
         for line in f:
             ignore_list = re.findall(r'[^a-zA-Z]+', line)
+            # [',', '! ']
             for ignore in ignore_list:
                 line = line.replace(ignore, ' ')
             lines = line.split(' ')
+            # abc def hello
+            # ['abc', 'def', 'hello']
+
             for word in lines:
                 if word.isalpha():
                     if word not in count_dict:
