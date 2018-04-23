@@ -1,4 +1,4 @@
-# 1、打印出100以内的斐波那契数列，使用2种方法实现
+
 
 def fibonacci_1(num: int):
     if num == 0:
@@ -36,6 +36,6 @@ def gen_promotion_code(num: int, length: int):
     while len(s) < num:
         promotion_code = ''.join(random.sample(sd, length))
         s.add(promotion_code)
-    return s
+    return print(s)
 
 gen_promotion_code(200, 9)
