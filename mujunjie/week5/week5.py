@@ -33,3 +33,30 @@ def rand():
         print("{}".format("拖鞋"))    #返回D
 
 rand() 
+
+
+#支持传入商品种类和个数
+def rand2(**kwargs):
+    tmplst = []
+    for i in kwargs.values():
+        tmplst.append(i)
+        tmp = sum(tmplst)
+    for k in kwargs.keys():
+        kwargs[k] = round(kwargs[k]/tmp*100)   #求出所有商品占比
+    #print(kwargs)
+    f = random.randint(1,100)
+    #print(f)
+    tmplst2 = []
+    for i in kwargs.keys():
+        tmplst2.append(i)
+    for i in  range(len(tmplst2)-1):
+        kwargs[tmplst2[i+1]] += kwargs[tmplst2[i]]       #求出所有商品所在区间
+    #print(kwargs)
+    for k,v in kwargs.items():
+        if f <= kwargs[k]:
+            print("{}.{}".format(k,v))
+            break
+
+rand2(a=20,b=20,c=30,d=40,e=50,f=60)
+
+
