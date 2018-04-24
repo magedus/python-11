@@ -1,0 +1,1 @@
+Everything inside the () of the while statement is going to be evaluated as a boolean. Meaning it gets converted into either true or false.
