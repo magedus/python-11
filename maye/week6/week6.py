@@ -18,7 +18,6 @@ lst[1]=list(n)[0]
 #print(dict(zip(lst,lst1)))
 print([dict((i,)) for i in (lambda x,y:zip(x,y))(lst,list(n))])
 '''
-m=(('a'),('b'))
-n=(('c'),('d'))
+m,n=(('a'),('b')),(('c'),('d'))
 
 print([dict((i,)) for i in (lambda x,y:zip(x,y))(m,n)])
