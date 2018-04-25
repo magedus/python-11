@@ -10,10 +10,15 @@ def reouter(lst1=None):
 print(reouter(lst))
 
 
-
+'''
 m=(('a'),('b'))
 n=(('c'),('d'))
 lst=list(m)
 lst[1]=list(n)[0]
 #print(dict(zip(lst,lst1)))
 print([dict((i,)) for i in (lambda x,y:zip(x,y))(lst,list(n))])
+'''
+m=(('a'),('b'))
+n=(('c'),('d'))
+
+print([dict((i,)) for i in (lambda x,y:zip(x,y))(m,n)])
