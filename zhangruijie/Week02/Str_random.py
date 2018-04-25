@@ -10,7 +10,7 @@ sn_No = 200
 pool = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 index = []
 
-# generate 200 different random number
+# generate 200 different random numbers
 for i in range(200):
 	raw = random.randint(0,pow(62,sn_len))
 	if raw not in index:
@@ -25,7 +25,7 @@ for i in range(200):
 		raw = raw // 62
 	sn.append(str)
 	
-# display SN	
+# display SNs	
 for i in range(200):
     print(sn[i])
 	

@@ -1,0 +1,26 @@
+s =""" Accessing Text from the Web and from Disk
+
+Electronic Books
+A small sample of texts from Project Gutenberg appears in the NLTK corpus collection. However, you may be interested in analyzing other texts from Project Gutenberg. You can browse the catalog of 25,000 free online books at http://www.gutenberg.org/catalog/, and obtain a URL to an ASCII text file. Although 90% of the texts in Project Gutenberg are in English, it includes material in over 50 other languages, including Catalan, Chinese, Dutch, Finnish, French, German, Italian, """
+word=[]#存储单词   
+#因为原文中每个单词都是用空格 或者逗号加空格分开的，  
+line=s.replace(',','')#除去逗号只要空格来分开单词  
+line=s.strip()  
+wo=line.split(' ')  
+word.extend(wo)  
+#去除重复的值  
+wokey={}
+#word作为键值,VAUE为空值
+wokey=wokey.fromkeys(word)
+word_1=list(wokey.keys())
+#然后统计单词出现的次数,并将它存入一个字典中  
+for i in word_1:  
+    wokey[i]=word.count(i) 
+print (wokey)
+#排序,按values进行排序，如果是按key进行排序用sorted(wokey.items(),key=lambda d:d[0],reverse=True)  
+wokey_1={}  
+wokey_1=sorted(wokey.items(),key=lambda d:d[1],reverse=True)    
+wokey_1=dict(wokey_1) 
+
+for x,y in wokey_1.items():  
+    print('the word is "','{}'.format(x),'"''"',' and its amount is "','{}'.format(y),'"') 
