@@ -1,4 +1,4 @@
-#/usr/bin/evn python
+#/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 输入一个英文句子，翻转句子中单词顺序
 
