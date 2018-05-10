@@ -1,0 +1,28 @@
+#判断字符串str2是否是str1的子串
+
+str2 = 'bcd'
+str1 = 'acdddabcd'
+
+st1 = []
+#第一种方法
+print(None if str1.find(str2)==-1 else str1.find(str2))
+
+#第二种方法
+tmx = ([ str1[i+ m] for m in range(len(str2))] for i in range(len(str1) - len(str2) + 1))
+for x in tmx:
+    tcm =''.join([x[n] for n in range(len(str2))])
+    if str2 == tcm:
+        print('{} is in {}'.format(str2,str1))
+        break
+else:
+    print('{} is not in {}'.format(str2,str1))
+
+
+#第三种方法
+for i in range(len(str1)- len(str2) + 1):
+    tmp = ''.join([str1[i+s] for s in range(len(str2))])
+    if str2 == tmp:
+        print('{} in {} index {}'.format(str2,str1,i))
+        break
+else:
+    print('{} is not in  {}'.format(str2, str1))

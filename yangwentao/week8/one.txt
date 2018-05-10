@@ -1,0 +1,17 @@
+#1、实现一个函数用于判断字符串str2是否是str1的子串。如果是，则该函数返回str2在str1中首次出 现的地址；否则，返回None。
+
+#第一种方法
+lst = [1,5,2,7,4,9]
+def fac(*args):
+  print(args[0])
+  for i in range(len(args[0])):
+      for j in range(len(args[0]) - 1):
+          tmp = args[0][i] + args[0][j]
+          if tmp == 11:
+              print('{} + {} = {}'.format(args[0][i],args[0][j],tmp))
+#fac(lst)
+
+
+#第二种方法
+
+print([(lst[i],lst[j]) for i in range(len(lst)) for j in range(i+1,len(lst))  if lst[i] + lst[j] == 11])
