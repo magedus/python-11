@@ -1,0 +1,32 @@
+1¡¢»ØÎÄÊýÅÐ¶Ï
+a=input('>>>')
+if len(a)==5:
+    print(a)
+    b=a[4]+a[3]+a[2]+a[1]+a[0]
+    print(b)
+    if a == b:
+        print('yes')
+    else:
+        print('no')
+
+2.
+import random
+a=[]
+for _ in range(50):
+    b=random.randint(0,100)
+    if b not in a:
+        if  len(a)==20:
+            break
+        a.append(b)
+
+print(a)
+
+c=[]
+for z in range(3):
+    tmp = a[0]
+    for i in range(1,20-z):
+        if a[i] > tmp:
+            tmp = a[i]
+    c.append(tmp)
+    a.remove((tmp))
+print(c)
