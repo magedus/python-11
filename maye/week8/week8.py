@@ -1,4 +1,7 @@
 #1、实现一个函数用于判断字符串str2是否是str1的子串。如果是，则该函数返回str2在str1中首次出 现的地址；否则，返回None。
+'''
+None if s1.find(s2)==-1 else s1.find(s2)
+'''
 s1='defabcdoabcdeftw'
 s2='abcdefg'
 
