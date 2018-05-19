@@ -4,14 +4,11 @@ print(a.split(','))
 =========================
 
 import shutil
-import os
-def transf(a_dir,b_dir):
-    if not os.path.isfile(a_dir) and not os.path.isdir(b_dir):
-        return False
-    file_path=os.path.split(a_dir)
-    file=file_path[1]
-    shutil.copy(file,b_dir)
-    return b_dir
+from pathlib import Path
+p=Path('a/test.txt')
+p.touch()
+p1=Path('b/').touch()
+shutil.copyfile(p,p1)
 ==========================================
 
 li = [ [ ] ] * 5 引用类型返回同一个地址 输出[[],[],[],[],[]] 相当于copy 生成同一个引用
