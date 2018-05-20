@@ -1,0 +1,26 @@
+def new_counter(x):
+
+    def _inc():
+        nonlocal x
+        while True:
+            x += 1
+            yield x
+    m = _inc()
+    return lambda :next(m)
+
+c1 = new_counter(10)
+c2 = new_counter(20)
+print(c1(), c2(),c1(),c2())
+
+
+def new_counter(x):
+
+    def _inc():
+        nonlocal x
+        x += 1
+        return x
+    return _inc
+
+c1 = new_counter(10)
+c2 = new_counter(20)
+print(c1(), c2(),c1(),c2())
