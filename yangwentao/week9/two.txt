@@ -1,0 +1,12 @@
+def fn(*args):
+    lst = []
+    for i in args:
+        lst.append(i)
+    for i in range(len(lst)):
+        if lst[i] in lst[i+1:]:
+            print('the letter {} is in {}'.format(args[i],args))
+            return print('this word {} are repeated letters!'.format(s))
+    return print('There are no repeated letters in this word {} !'.format(s))
+
+s = 'arccaref'
+fn(*s)
