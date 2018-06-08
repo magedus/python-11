@@ -34,6 +34,7 @@ def find_sub2(s1: str, s2: str):
                 return i
 
 
+# test
 print(find_sub('11', '1eee'))
 print(find_sub2('weqr', 'e'))
 
@@ -56,6 +57,28 @@ def find_dst_value(target: int, targets: list):
                 return targets[i], targets[j]
 
 
+def find_dst_value2(target: int, targets: list):
+    """
+    time complexity O(N) + O(N*logN)
+    :param target:
+    :param targets:
+    :return:
+    """
+    targets.sort()
+    i, j = 0, len(targets)-1
+    while i < j:
+        left_value = targets[i]
+        right_value = targets[j]
+        if left_value + right_value == target:
+            return left_value, right_value
+        if left_value + right_value > target:
+            j -= 1
+        elif left_value + right_value < target:
+            i += 1
+
+
+# test
 lst = [1, 5, 2, 7, 4, 9]
-t3 = 3
-print(find_dst_value(t3, lst))
+t3 = 7
+print(find_dst_value2(t3, lst))
+
