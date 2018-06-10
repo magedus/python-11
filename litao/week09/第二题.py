@@ -15,7 +15,7 @@ def str_duplication(src_str):
 def str_duplication(src_str):
     return 'No duplication' if len(set(src_str)) == len(src_str) else 'Dupliccation'
 
-str_example = 'abcdefg'
+str_example = 'abcdefgg'
 #str_example = 'abcddefg'
 
 print(str_duplication(str_example))
