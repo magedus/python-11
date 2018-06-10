@@ -18,14 +18,11 @@ class Stack:
     def __init__(self):
         self.head = None
 
-    def append(self, value):
-        node = Node(value)
-        if self.head is None:
-            self.head = node
-            return
-        tmp = self.head
+
+    def append(self, data):
+        node = Node(data)
+        node.next = self.head
         self.head = node
-        self.head.set_next(tmp)
 
     def pop(self):
         if self.head is None:
