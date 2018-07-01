@@ -10,7 +10,7 @@ import os
 def list_pyfile(directory, lst=None):
     # 对目录进行递归，判断是否是.py后缀文件并加入列表
     if lst is None:
-        lst =  []
+        lst = []
     abs_path = os.path.abspath(directory)
 
     for f in os.listdir(abs_path):
