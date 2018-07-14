@@ -62,3 +62,7 @@ def longest_substring_length(s: str):
 # test
 print('Q3:', 80 * '-')
 print(longest_substring_length('aaaabbcdefusqq'))
+
+
+
+
