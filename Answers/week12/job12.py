@@ -1,5 +1,6 @@
 # 1、实现一个可迭代的类
 
+
 class IterC:
     def __init__(self):
         self.lst = []
@@ -62,7 +63,3 @@ def longest_substring_length(s: str):
 # test
 print('Q3:', 80 * '-')
 print(longest_substring_length('aaaabbcdefusqq'))
-
-
-
-
