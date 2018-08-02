@@ -21,6 +21,7 @@ def merge_sort(alist):
 
         merge_sort(left_half)
         merge_sort(right_half)
+
         i, j, k = 0, 0, 0
 
         while i < len(left_half) and j < len(right_half):
@@ -30,21 +31,24 @@ def merge_sort(alist):
             else:
                 alist[k] = right_half[j]
                 j = j + 1
+            k = k + 1
 
         while i < len(left_half):
             alist[k] = left_half[i]
             i = i + 1
             k = k + 1
+
         while j < len(right_half):
             alist[k] = right_half[j]
             j = j + 1
-            k + k + 1
+            k = k + 1
     return alist
 
 
 # test
 l1 = [3, 2, 1, 0, 7, 11, 56, 23]
+l2 = [3, 2, 1, 0, 7, 11, 56, 23]
 print(insert_sort(l1))
-print(merge_sort(l1))
+print(merge_sort(l2))
 
 # 2、实现一个LRU缓存类，至少包含get和put方法
