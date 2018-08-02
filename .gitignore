@@ -78,3 +78,4 @@ captures/
 *.jks
 
 apiconfig.py
+.idea/workspace.xml
