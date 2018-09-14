@@ -12,10 +12,10 @@ def fibonacci_1(num: int):
     print(a, b)
 
 
-
 def fibonacci_2(num: int):
     if num <= 1:
         return num
+
     return fibonacci_2(num-1) + fibonacci_2(num-2)
 
 # 2、使用 Python 实现随机生成 200 无重复激活码（或者优惠券），字符串长度大于5以上
@@ -38,7 +38,9 @@ def get_promotion_code(num: int, length: int):
         s.add(promotion_code)
     return s
 
-
+    print(gen_promotion_code(200, 9))
+    print('abc %s %d' % ('as', 11))
+    print('wqwqwq{},{}'.format('aa', 11))
 
 
 
