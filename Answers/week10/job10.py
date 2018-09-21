@@ -21,3 +21,20 @@ def list_pyfile(directory, lst=None):
             list_pyfile(abs_f, lst)
 
     return lst
+
+if __name__ == '__main__':
+    import random
+
+    count = 0
+    lst1 = []
+    lst1.append('iver1')
+    while count < 10:
+        x = ''
+        rd = random.sample('0123456789abcdefghijklmnopqrstuvwxz!', 5)
+        for i in range(len(rd)):
+            x += rd[i]
+        if x not in lst1:
+            lst1.append(x)
+            count+=1
+
+    print(len(lst1), lst1)
